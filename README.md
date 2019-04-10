@@ -1,6 +1,6 @@
 # Plantilla de React.js
 
-Plantilla para dar inicio un proyecto de REACT.JS.
+Plantilla para dar inicio a un proyecto de REACT.JS.
 
 # Inicio
 
@@ -17,4 +17,27 @@ npm i
 Iniciar plantilla
 npm start
 
+```
+
+# Estructura del proyecto
+
+```shell
+|-- public
+|-- src
+|   |-- components
+|   |   |-- styles
+|   |   |    |-- menu.css
+|   |   |-- bread-crumb-routes.js
+|   |   |-- header.js
+|   |   |-- menu.js
+|   |   |-- routes-return.js
+|   |-- images
+|   |-- pages
+|   |   |-- contact
+|   |   |-- home
+|   |   |-- layout
+|   |-- index.css
+|   |-- index.js
+|-- .gitignore
+|-- package.json
 ```
