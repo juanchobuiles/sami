@@ -3,9 +3,16 @@ import BreadcrumbRoutes from "../../components/bread-crumb-routes";
 import BootstrapTable from "react-bootstrap-table-next";
 import { ButtonToolbar, Button } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
+import "./styles/company_branch.css";
+import ButtonsHeader from "../../components/Util/buttons-header";
 class Company_branch extends Component {
   state = {
-    routes: [{ name: "Sucursal", active: true }]
+    routes: [{ name: "Sucursal", active: true }],
+    data: [],
+    buttonsHeader: [
+      { name: "new", route: "/new_company_branch" },
+      { name: "print", variant: "outline-secondary", title: "Imprimir" }
+    ]
   };
 
   render() {
@@ -46,11 +53,7 @@ class Company_branch extends Component {
     return (
       <div>
         <BreadcrumbRoutes name={this.state.routes} />
-        <LinkContainer to="/new_company_branch">
-          <Button variant="outline-secondary">
-            <i class="material-icons">note_add</i> Nuevo
-          </Button>
-        </LinkContainer>
+        <ButtonsHeader buttonsHeader={this.state.buttonsHeader}></ButtonsHeader>
 
         <BootstrapTable keyField="id" data={data} columns={columns} />
       </div>

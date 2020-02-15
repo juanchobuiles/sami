@@ -17,6 +17,7 @@ class Layout extends Component {
       <Router>
         <div className="layout">
           <Menu />
+
           <div className="layout-content">
             <Header user="Admin" />
             <Container>
