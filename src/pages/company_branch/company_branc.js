@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import BreadcrumbRoutes from "../../components/bread-crumb-routes";
 import BootstrapTable from "react-bootstrap-table-next";
 import { ButtonToolbar, Button } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
 class Company_branch extends Component {
   state = {
     routes: [{ name: "Sucursal", active: true }]
@@ -30,9 +31,11 @@ class Company_branch extends Component {
         text: "",
         formatter: (cellContent, row) => (
           <ButtonToolbar className="buttons">
-            <Button variant="outline-dark" size="sm">
-              <i class="material-icons">edit</i>
-            </Button>
+            <LinkContainer to="/edit_company_branch">
+              <Button variant="outline-dark" size="sm">
+                <i class="material-icons">edit</i>
+              </Button>
+            </LinkContainer>
             <Button variant="outline-danger" size="sm">
               <i class="material-icons">delete</i>
             </Button>
@@ -43,11 +46,12 @@ class Company_branch extends Component {
     return (
       <div>
         <BreadcrumbRoutes name={this.state.routes} />
-        <ButtonToolbar>
-          <Button variant="outline-dark" size="lg">
+        <LinkContainer to="/new_company_branch">
+          <Button variant="outline-secondary">
             <i class="material-icons">note_add</i> Nuevo
           </Button>
-        </ButtonToolbar>
+        </LinkContainer>
+
         <BootstrapTable keyField="id" data={data} columns={columns} />
       </div>
     );
