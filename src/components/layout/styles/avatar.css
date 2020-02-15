@@ -1,0 +1,16 @@
+.avatar {
+  display: flex;
+  align-items: center;
+}
+.avatar-image {
+  width: 110px;
+}
+.avatar-section {
+  font-size: 14px;
+  color: lightgray;
+  margin-block-start: auto;
+}
+
+.avatar-section p {
+  margin: 0;
+}

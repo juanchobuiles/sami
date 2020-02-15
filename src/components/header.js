@@ -31,6 +31,7 @@ class Header extends Component {
       <Navbar bg="light">
         <Navbar.Brand as="a" onClick={this.ocultaNav}>
           <MaterialIcon icon="menu" />
+          {/* SS<MaterialIcon icon="menu" /> */}
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">

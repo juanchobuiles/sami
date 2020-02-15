@@ -5,6 +5,9 @@ import Menu from "../../components/menu";
 import Header from "../../components/header";
 import Home from "../home/home";
 import Contact from "../contact/contact";
+import Company_branch from "../company_branch/company_branc";
+import New_Company_branch from "../company_branch/new_company_branch";
+import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/layout.css";
 class Layout extends Component {
@@ -18,6 +21,11 @@ class Layout extends Component {
             <Container>
               <Route exact path="/" component={Home} />
               <Route path="/contact" component={Contact} />
+              <Route path="/company_branch" component={Company_branch} />
+              <Route
+                path="/new_company_branch"
+                component={New_Company_branch}
+              />
             </Container>
           </div>
         </div>

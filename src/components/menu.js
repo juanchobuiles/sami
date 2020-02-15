@@ -2,8 +2,11 @@ import React from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { LinkContainer } from "react-router-bootstrap";
-import logo from "../images/logo.svg";
+import avatar from "../images/avatar.jpeg";
+import MaterialIcon from "material-icons-react";
 import "./styles/menu.css";
+import Avatar from "./layout/avatar";
+
 const Menu = () => (
   <Navbar
     bsPrefix="nav-menu"
@@ -12,15 +15,14 @@ const Menu = () => (
     variant="dark"
   >
     <Navbar.Brand>
-      <Link to="/">
-        <img src={logo} width={250} alt="Logo aplicación" />
-      </Link>
+      <Avatar avatar={avatar}></Avatar>
     </Navbar.Brand>
     <hr className="bg-secondary" />
     <Nav md={12} className="flex-column">
-      <LinkContainer to="/">
+      <LinkContainer to="/home">
         <Nav.Link>
-          <i className="material-icons">home</i> Inicio
+          <i className="material-icons">home</i>
+          Inicio
         </Nav.Link>
       </LinkContainer>
       <LinkContainer to="/contact">
@@ -34,22 +36,25 @@ const Menu = () => (
             <i className="material-icons">settings</i> Configuración
           </div>
         }
+        drop="right"
       >
-        <LinkContainer to="/selections">
-          <NavDropdown.Item>
-            <i className="material-icons">description </i> Selecciones
-          </NavDropdown.Item>
-        </LinkContainer>
-        <LinkContainer to="/clients">
-          <NavDropdown.Item>
-            <i className="material-icons">person</i> Clientes
-          </NavDropdown.Item>
-        </LinkContainer>
-        <LinkContainer to="/items">
-          <NavDropdown.Item>
-            <i className="material-icons">view_module</i> Items
-          </NavDropdown.Item>
-        </LinkContainer>
+        <div className="nav-dropdown">
+          <LinkContainer to="/selections">
+            <NavDropdown.Item>
+              <i className="material-icons">description </i> Empresa
+            </NavDropdown.Item>
+          </LinkContainer>
+          <LinkContainer to="/company_branch">
+            <NavDropdown.Item>
+              <i className="material-icons">person</i> Sucursales
+            </NavDropdown.Item>
+          </LinkContainer>
+          <LinkContainer to="/items">
+            <NavDropdown.Item>
+              <i className="material-icons">view_module</i> Centro utilidad
+            </NavDropdown.Item>
+          </LinkContainer>
+        </div>
       </NavDropdown>
     </Nav>
   </Navbar>
