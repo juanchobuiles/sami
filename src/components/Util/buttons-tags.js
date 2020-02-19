@@ -43,6 +43,25 @@ const ButtonsTags = props => {
           </Button>
         );
         break;
+      case "save":
+        item.push(
+          <Button
+            variant={element.variant}
+            key={index}
+            size={element.size}
+            onClick={() => element.onClick()}
+          >
+            <i className="material-icons">save</i> {element.title}
+          </Button>
+        );
+        break;
+      case "cancel":
+        item.push(
+          <Button variant={element.variant} key={index} size={element.size}>
+            <i className="material-icons">cancel</i> {element.title}
+          </Button>
+        );
+        break;
       default:
         break;
     }
