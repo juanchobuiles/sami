@@ -1,40 +1,8 @@
-.nav-menu {
-  flex-direction: column;
-}
-.nav-menu img {
+/* .nav-menu img {
   padding: 1em 1em 0 1em;
 }
 
-.nav-menu-nav {
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-.show {
-  opacity: 1;
-  transition: opacity 1000ms;
-  display: block;
-}
 
-.hide {
-  opacity: 0;
-  transition: opacity 1000ms;
-  display: none;
-}
-
-.nav-link {
-  color: rgba(255, 255, 255, 0.5);
-}
-.nav-link:hover {
-  text-decoration: none;
-  background: #f8f9fa;
-  color: #16181b;
-}
-.nav-link.active {
-  color: #fff;
-  text-decoration: none;
-  background-color: #007bff;
-}
 
 .nav-menu-dark .nav-menu-nav {
   color: rgba(255, 255, 255, 0.5);
@@ -53,23 +21,82 @@
   height: auto;
   opacity: 1;
 }
+
 .dropdown-menu {
   background-color: #343a40;
 }
 
 .nav-menu-nav .dropdown-menu {
-  /* position: static;
+  position: static;
   float: none; */
-  background-color: #343a40;
+/* background-color: #343a40;
   border-top: 1px solid #6c757d;
-  border-bottom: 1px solid #6c757d;
-  /* color: #6c757d; */
+  border-bottom: 1px solid #6c757d; */
+/* color: #6c757d;
 }
+
 .nav-menu-nav .dropdown-item {
   color: rgba(255, 255, 255, 0.5);
 }
+
 a.dropdown-toggle.nav-link:hover {
   color: #16181b;
   text-decoration: none;
   background-color: #f8f9fa;
+} */
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.5);
+}
+.nav-link:hover {
+  text-decoration: none;
+  background: #f8f9fa;
+  color: #16181b;
+}
+.nav-link.active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #007bff;
+}
+
+span.navbar-toggler-icon {
+  width: 1.1em;
+}
+a.nav-link {
+  display: flex;
+}
+a.nav-link p {
+  padding-left: 8px;
+}
+.navbar-vertical {
+  width: 320px;
+  height: 100vh;
+  padding: 0.5rem 0.5rem;
+  transition: width 0.31s;
+}
+
+.navbar-vertical .navbar-brand {
+  margin-right: 0;
+  padding-right: 1.5rem;
+  display: block;
+}
+
+.navbar-vertical .navbar-toggler {
+  border: none;
+  padding: 0;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.navbar-vertical ul.navbar-nav {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.navbar-vertical.show {
+  width: 320px;
+}
+
+.navbar-vertical.hidden {
+  width: 40px;
 }

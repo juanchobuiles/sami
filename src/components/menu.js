@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { LinkContainer } from "react-router-bootstrap";
 import avatar from "../images/avatar.jpeg";
@@ -10,15 +10,27 @@ import Avatar from "./layout/avatar";
 const Menu = () => (
   <Navbar
     bsPrefix="nav-menu"
-    className="toggle-content.is-visible"
+    className="navbar-vertical show"
     bg="dark"
     variant="dark"
   >
-    <Navbar.Brand>
-      <Avatar avatar={avatar}></Avatar>
-    </Navbar.Brand>
     <hr className="bg-secondary" />
-    <Nav md={12} className="flex-column">
+    <Nav>
+      <Button className="navbar-toggler ml-auto">
+        <i className="material-icons">menu</i>
+      </Button>
+      <ul className="navbar-nav">
+        <li class="nav-item">
+          <LinkContainer to="/home">
+            <Nav.Link>
+              <i className="material-icons">home</i>
+              Inicio
+            </Nav.Link>
+          </LinkContainer>
+        </li>
+      </ul>
+    </Nav>
+    {/* <Nav md={12} className="flex-column">
       <LinkContainer to="/home">
         <Nav.Link>
           <i className="material-icons">home</i>
@@ -56,7 +68,7 @@ const Menu = () => (
           </LinkContainer>
         </div>
       </NavDropdown>
-    </Nav>
+    </Nav> */}
   </Navbar>
 );
 export default Menu;

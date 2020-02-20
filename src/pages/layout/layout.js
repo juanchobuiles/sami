@@ -16,10 +16,10 @@ class Layout extends Component {
     return (
       <Router>
         <div className="layout">
+          <Header user="Admin" />
           <Menu />
 
           <div className="layout-content">
-            <Header user="Admin" />
             <Container>
               <Route exact path="/" component={Home} />
               <Route path="/contact" component={Contact} />
