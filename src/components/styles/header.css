@@ -1,0 +1,20 @@
+.navbar-header {
+  background-color: #3b3a39;
+  color: #faf9f8;
+}
+button.btn.btn-header {
+  color: #f3f2f1;
+  border: none;
+  margin: auto;
+}
+
+button.btn.btn-header:hover {
+  background-color: #232322;
+  color: #f3f2f1;
+}
+/* button.navbar-apps {
+  border: none;
+  padding: 0;
+  display: inline-block;
+  cursor: pointer;
+} */

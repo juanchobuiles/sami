@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { LinkContainer } from "react-router-bootstrap";
 import avatar from "../images/avatar.jpeg";
 import MaterialIcon from "material-icons-react";
-import "./styles/menu.css";
+// import "./styles/menu.css";
 import Avatar from "./layout/avatar";
 
 const Menu = () => (
@@ -14,7 +14,6 @@ const Menu = () => (
     bg="dark"
     variant="dark"
   >
-    <hr className="bg-secondary" />
     <Nav>
       <Button className="navbar-toggler ml-auto">
         <i className="material-icons">menu</i>
