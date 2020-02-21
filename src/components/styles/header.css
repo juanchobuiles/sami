@@ -1,6 +1,11 @@
+nav.navbar {
+  padding: 0;
+  height: 7vh;
+}
 .navbar-header {
-  background-color: #3b3a39;
-  color: #faf9f8;
+  background-color: #484644;
+  color: #ffffff;
+  padding: 0;
 }
 button.btn.btn-header {
   color: #f3f2f1;
@@ -8,9 +13,17 @@ button.btn.btn-header {
   margin: auto;
 }
 
-button.btn.btn-header:hover {
+.header-brand:hover {
   background-color: #232322;
   color: #f3f2f1;
+}
+.header-brand {
+  height: 7vh;
+  padding-top: 1rem;
+  padding-right: 0.6rem;
+  padding-left: 0.4rem;
+  /* padding: 0.5rem 0.5rem 0.3rem 0.5rem; */
+  margin-right: 3px;
 }
 /* button.navbar-apps {
   border: none;

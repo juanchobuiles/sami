@@ -10,15 +10,14 @@ import New_Company_branch from "../company_branch/new_company_branch";
 import Edit_Company_branch from "../company_branch/edit_company_branch";
 import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import "./styles/layout.css";
+import "./styles/layout.css";
 class Layout extends Component {
   render() {
     return (
       <Router>
+        <Header user="Admin" />
         <div className="layout">
-          <Header user="Admin" />
           <Menu />
-
           <div className="layout-content">
             <Container>
               <Route exact path="/" component={Home} />
