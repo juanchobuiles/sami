@@ -19,15 +19,9 @@ button.btn.btn-header {
 }
 .header-brand {
   height: 7vh;
-  padding-top: 1rem;
+  display: flex;
+  align-items: center;
   padding-right: 0.6rem;
   padding-left: 0.4rem;
-  /* padding: 0.5rem 0.5rem 0.3rem 0.5rem; */
   margin-right: 3px;
 }
-/* button.navbar-apps {
-  border: none;
-  padding: 0;
-  display: inline-block;
-  cursor: pointer;
-} */

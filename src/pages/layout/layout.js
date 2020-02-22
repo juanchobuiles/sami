@@ -11,6 +11,7 @@ import Edit_Company_branch from "../company_branch/edit_company_branch";
 import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/layout.css";
+import MenuApps from "../../components/menu-apps";
 class Layout extends Component {
   render() {
     return (
@@ -18,6 +19,7 @@ class Layout extends Component {
         <Header user="Admin" />
         <div className="layout">
           <Menu />
+          <MenuApps></MenuApps>
           <div className="layout-content">
             <Container>
               <Route exact path="/" component={Home} />

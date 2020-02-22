@@ -1,0 +1,36 @@
+.navbar-apps {
+  position: absolute;
+  top: 0;
+  height: 93vh;
+  width: 20%;
+  padding: 0.5rem 0.5rem;
+  transition: width 0.31s;
+  background-color: white;
+  z-index: 100;
+}
+.navbar-brand {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.navbar-brand a {
+  padding: 0.5rem;
+}
+
+.navbar-brand a:hover {
+  background-color: #f3f2f1;
+}
+
+hr {
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.navbar-apps.show {
+  display: block;
+}
+
+.navbar-apps.hidden {
+  display: none;
+}
